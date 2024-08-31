@@ -1,1 +1,5 @@
-
+<style name="Theme.MyApp" parent="Theme.Material3.DayNight">
+    <!-- Use dynamic color -->
+    <item name="colorPrimary">@color/system_neutral1_0</item>
+    <item name="colorSecondary">@color/system_neutral1_0</item>
+</style>
