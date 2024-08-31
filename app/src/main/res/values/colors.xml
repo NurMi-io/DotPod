@@ -1,0 +1,5 @@
+<resources>
+    <!-- 기본 색상 팔레트 -->
+    <color name="dotpod_white">#FFFFFF</color>
+    <color name="dotpod_black">#000000</color>
+</resources>
