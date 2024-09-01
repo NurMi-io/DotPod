@@ -92,3 +92,52 @@ Kotlin에서 동적 색상을 관리하기 위해 Android의 Material You 디자
    ```
 
 이 코드는 Material You를 기반으로 동적 색상을 적용하는 기본적인 예제입니다. 실제 사용 시에는 프로젝트의 요구 사항에 맞게 적절히 조정해야 합니다. 위의 예제에서는 Compose를 사용하여 UI를 구성하고 있습니다. 이를 통해 앱의 주요 색상이 사용자의 배경 이미지에 따라 자동으로 조정됩니다.
+# Part 3
+제가 직접 소프트웨어를 사용하거나 코드를 실행할 수는 없습니다. 하지만, 이해를 돕기 위해 "DotPod" 앱의 `build.gradle.kts` 파일의 예시 설정에 대해 설명드릴 수 있습니다.
+
+만약 "DotPod" 앱이 Google Play에서 베타 버전으로 배포되는데 사용되는 Kotlin DSL 파일인 `build.gradle.kts`를 설정하려면, 다음과 같은 단계를 포함할 수 있습니다:
+
+1. **플러그인 적용**: Android 애플리케이션을 빌드하기 위해 필요한 Gradle 플러그인을 적용합니다.
+   ```kotlin
+   plugins {
+       id("com.android.application")
+       kotlin("android")
+       kotlin("kapt")
+   }
+   ```
+
+2. **안드로이드 SDK 설정**: 필요한 SDK 버전과 같은 안드로이드 관련 설정을 지정합니다.
+   ```kotlin
+   android {
+       compileSdkVersion(31)
+
+       defaultConfig {
+           applicationId("com.example.dotpod")
+           minSdkVersion(21)
+           targetSdkVersion(31)
+           versionCode(1)
+           versionName("1.0-beta")
+           
+           // 베타 버전으로 설정
+           versionNameSuffix("-beta")
+       }
+   }
+   ```
+
+3. **의존성 관리**: 필요한 라이브러리 의존성을 추가합니다.
+   ```kotlin
+   dependencies {
+       implementation(kotlin("stdlib"))
+       // Google Play 서비스, 테스트 라이브러리 등 추가
+       implementation("com.google.android.gms:play-services-maps:17.0.0")
+   }
+   ```
+
+4. **베타 배포 설정**: 베타 테스트를 위한 구성을 추가할 수 있습니다.
+   ```kotlin
+   // 이 부분은 프로젝트와 배포 전략에 따라 다를 수 있습니다.
+   ```
+
+"지도 시간"에 대한 언급이 있었는데, 만약 이것이 지도 관련 기능의 개발 시간을 의미한다면, 관련 API(예: Google Maps API)의 설정과 통합 방법을 빌드 파일에 포함시켜야 할 수 있습니다.
+
+이 정보가 도움이 되었기를 바랍니다. 추가적인 질문이나 다른 도움이 필요하시면 말씀해주세요!
