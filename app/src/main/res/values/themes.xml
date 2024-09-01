@@ -2,4 +2,7 @@
     <!-- Use dynamic color -->
     <item name="colorPrimary">@color/system_neutral1_0</item>
     <item name="colorSecondary">@color/system_neutral1_0</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+    <item name="colorOnPrimary">@color/colorOnPrimary</item>
 </style>
