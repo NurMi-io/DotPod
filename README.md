@@ -1,5 +1,5 @@
 # 닷팟
-![Code Test and Eval](https://github.com/NurMi-io/DotPod/actions/workflows/code-checks.yml/badge.svg)(https://github.com/NurMiApp/capod/actions/workflows/code-checks.yml)
+[![Code tests & eval](https://github.com/NurMi-io/DotPod/actions/workflows/code-checks.yml/badge.svg)](https://github.com/NurMi-io/DotPod/actions/workflows/code-checks.yml)
 
 안드로이드에 Nothing Ear와 CMF가 있나요?
 # 다운로드
