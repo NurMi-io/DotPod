@@ -223,3 +223,83 @@ git push -u origin master
 - 프로젝트에 변경 사항이 있을 때마다, 변경된 파일을 `add`하고 `commit`한 후 `push`합니다.
 
 이 튜토리얼은 Kotlin 프로젝트 파일을 GitHub에 업로드하고 버전 관리하는 기본적인 방법을 설명합니다. 이를 통해 전 세계 어느 곳에서나 접근 가능하며, 팀 프로젝트의 경우 협업도 용이해집니다. Nothing Ear 장치와 관련된 프로젝트가 아니더라도, 모든 종류의 소프트웨어 개발 프로젝트에 이 방법을 적용할 수 있습니다.
+# Part 7
+질문의 내용을 바탕으로, `Nothing Ear` 장치를 위한 `DotPod`라는 프로젝트에 `NothingScript.kt` 파일을 추가하고 설정하는 방법에 대해 설명드리겠습니다. 여기에서는 Android Studio를 사용하여 Kotlin 파일을 추가하는 기본적인 절차를 안내드리겠습니다:
+
+### 1. Android Studio에서 프로젝트 열기
+가정하에 DotPod 프로젝트가 이미 존재한다고 가정하고, Android Studio에서 해당 프로젝트를 엽니다.
+
+### 2. 파일 추가
+1. `DotPod/app/src/main/java/com/nurmi/dotpod` 디렉토리로 이동합니다.
+2. 마우스 오른쪽 버튼을 클릭하고 `New` > `Kotlin File/Class`를 선택합니다.
+3. 파일 이름으로 `NothingScript`를 입력하고 `Kind`에서 `File`을 선택한 후 `OK`를 클릭하여 파일을 생성합니다.
+
+### 3. 코드 작성
+생성된 `NothingScript.kt` 파일을 열고 필요한 Kotlin 코드를 작성합니다. 예를 들어, 다음은 간단한 스켈레톤 코드입니다:
+
+```kotlin
+package com.nurmi.dotpod
+
+object NothingScript {
+    fun controlDevice() {
+        println("Device control logic here")
+    }
+}
+```
+
+### 4. 파일을 프로젝트에 통합
+코드를 작성한 후, 필요한 곳에서 `NothingScript` 객체의 `controlDevice` 메소드를 호출하여 장치를 제어할 수 있도록 합니다.
+
+### 5. 애플리케이션 빌드 및 테스트
+변경사항을 저장하고 프로젝트를 빌드하여 모든 것이 정상적으로 작동하는지 확인합니다.
+
+### 6. GitHub에 변경사항 반영
+변경사항을 로컬 Git 리포지토리에 커밋 후 GitHub에 푸시합니다. 이렇게 하면 다른 개발자들도 새로운 파일과 변경사항을 볼 수 있습니다.
+
+```bash
+git add .
+git commit -m "Add NothingScript.kt for device control"
+git push origin main
+```
+
+이렇게 `NothingScript.kt` 파일을 `DotPod` 프로젝트에 추가하고 필요한 기능을 구현하는 방법을 제시했습니다. 필요한 기능에 따라 Kotlin 코드를 추가하거나 수정해야 할 수 있습니다.
+### CMF
+`CMF Buds` 장치를 위한 `DotPod` 프로젝트에 `CMFScript.kt` 파일을 추가하고 설정하는 과정을 안내드리겠습니다. 이 과정은 Android Studio를 사용하여 진행됩니다.
+
+### 1. Android Studio에서 프로젝트 열기
+이미 생성되어 있는 `DotPod` 프로젝트를 Android Studio에서 엽니다.
+
+### 2. 파일 추가
+1. `DotPod/app/src/main/java/com/nurmi/dotpod` 경로로 이동합니다.
+2. 마우스 오른쪽 버튼을 클릭하고 `New` > `Kotlin File/Class`를 선택합니다.
+3. 파일 이름을 `CMFScript`로 입력하고, `Kind`에서 `File`을 선택한 후 `OK`를 클릭해 새 Kotlin 파일을 생성합니다.
+
+### 3. 코드 작성
+생성된 `CMFScript.kt` 파일을 열고 필요한 Kotlin 코드를 작성합니다. 기본적인 예제 코드는 다음과 같습니다:
+
+```kotlin
+package com.nurmi.dotpod
+
+object CMFScript {
+    fun activateFeatures() {
+        println("Activating features for CMF Buds")
+    }
+}
+```
+
+### 4. 파일을 프로젝트에 통합
+작성한 `CMFScript` 객체의 메소드를 프로젝트의 다른 부분에서 호출할 수 있도록 합니다. 예를 들어, 애플리케이션 시작 시 이 메소드를 호출할 수 있습니다.
+
+### 5. 애플리케이션 빌드 및 테스트
+모든 코드를 저장하고 프로젝트를 빌드하여 새로운 기능이 제대로 작동하는지 확인합니다.
+
+### 6. 코드 변경사항을 Git에 커밋
+개발한 내용을 Git 리포지토리에 커밋하고, 필요한 경우 GitHub에 푸시하여 코드를 공유합니다.
+
+```bash
+git add .
+git commit -m "Add CMFScript.kt for CMF Buds feature activation"
+git push origin main
+```
+
+이 단계들을 통해 `DotPod` 프로젝트에 `CMF Buds` 장치를 위한 `CMFScript.kt` 파일을 성공적으로 추가하고 기본 설정을 마칠 수 있습니다. 필요에 따라 `CMFScript` 내의 기능을 확장하거나 수정할 수 있습니다.
