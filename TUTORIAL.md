@@ -141,3 +141,45 @@ Kotlin에서 동적 색상을 관리하기 위해 Android의 Material You 디자
 "지도 시간"에 대한 언급이 있었는데, 만약 이것이 지도 관련 기능의 개발 시간을 의미한다면, 관련 API(예: Google Maps API)의 설정과 통합 방법을 빌드 파일에 포함시켜야 할 수 있습니다.
 
 이 정보가 도움이 되었기를 바랍니다. 추가적인 질문이나 다른 도움이 필요하시면 말씀해주세요!
+# Part 4
+WearOS 애플리케이션 개발과 관련하여 "DotPod에 Gemfile을 설정하는 방법"에 대해 설명드리겠습니다. 그러나, 통상적으로 Gemfile은 Ruby 프로그래밍 언어와 관련된 프로젝트에서 사용되는 파일로, Ruby 프로젝트의 의존성(dependencies)을 관리하는 Bundler 도구와 함께 사용됩니다. Kotlin이나 Android/WearOS 개발에서는 일반적으로 Gemfile을 사용하지 않습니다. 대신 Kotlin/Android 프로젝트에서는 Gradle을 사용하여 의존성을 관리합니다.
+
+따라서, 만약 여기서 언급하고 싶은 것이 Ruby 프로젝트의 Gemfile 설정 방법이라면, 아래와 같이 기본적인 Gemfile 설정 방법을 설명드리겠습니다. 그렇지 않고 실제로 Kotlin 또는 Android/WearOS 프로젝트의 설정에 대해 궁금하시다면, Gradle에 대한 설명을 드릴 수 있습니다.
+
+### Ruby 프로젝트의 Gemfile 설정 방법
+
+1. **Gemfile 생성**: 프로젝트의 루트 디렉토리에 `Gemfile`이라는 이름의 파일을 생성합니다.
+
+2. **소스 추가**: Gemfile의 첫 줄에는 RubyGems 소스를 명시해야 합니다. 대부분의 경우 다음과 같이 기재합니다.
+   ```ruby
+   source 'https://rubygems.org'
+   ```
+
+3. **의존성 추가**: 필요한 gem을 Gemfile에 추가합니다. 예를 들어, `rails`와 `nokogiri`를 추가하려면 다음과 같이 작성합니다.
+   ```ruby
+   gem 'rails'
+   gem 'nokogiri'
+   ```
+
+4. **Bundler 사용**: Gemfile이 준비되면, 터미널에서 다음 명령어를 통해 모든 의존성을 설치할 수 있습니다.
+   ```bash
+   bundle install
+   ```
+
+5. **Gemfile.lock**: `bundle install`을 실행하면 `Gemfile.lock` 파일이 생성됩니다. 이 파일은 프로젝트에서 사용하는 모든 gem의 정확한 버전을 기록하여, 다른 환경에서도 동일한 환경을 재현할 수 있도록 합니다.
+
+### Kotlin/Android/WearOS 프로젝트의 의존성 관리
+
+Kotlin 또는 Android/WearOS 프로젝트에서는 `build.gradle` 파일 또는 `build.gradle.kts` 파일을 통해 의존성을 관리합니다. 예를 들어, 다음과 같이 의존성을 추가할 수 있습니다.
+
+```kotlin
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    // 기타 필요한 의존성 추가
+}
+```
+
+이 방식은 Java/Kotlin 기반의 Android 개발에서 표준적으로 사용됩니다.
+
+혹시 더 구체적인 설정이나 다른 프레임워크/언어를 사용하는 경우, 추가적인 정보를 제공해주시면 더 적합한 조언을 드릴 수 있습니다.
