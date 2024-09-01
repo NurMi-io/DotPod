@@ -213,6 +213,7 @@ PLATFORMS
 
 DEPENDENCIES
   rails
+  nokogiri
 
 BUNDLED WITH
    2.2.8
