@@ -360,3 +360,64 @@ FAB의 아이콘(`ic_add`), 색상(`primaryColor`) 등은 프로젝트의 `res` 
 모든 설정을 마친 후, 앱을 실행하여 FAB이 올바르게 작동하는지 테스트합니다. 버튼을 클릭했을 때 토스트 메시지가 표시되는지 확인할 수 있습니다.
 
 이러한 단계를 통해 Kotlin과 Android Studio를 사용하여 플로팅 액션 버튼을 성공적으로 구현할 수 있습니다. 추가적인 질문이나 도움이 필요하면 언제든지 질문해주세요.
+### CMF
+Kotlin에서 Floating Action Button (FAB)을 구현하는 것은 Android 애플리케이션 개발에서 자주 사용되는 UI 요소입니다. FAB는 주로 주요 작업을 촉진하고 사용자에게 명확하게 표시하기 위해 사용됩니다. 여기서는 Kotlin을 사용하여 Android 애플리케이션 내에서 FAB를 구현하는 기본적인 방법에 대해 설명하겠습니다.
+
+### 1. 레이아웃 XML 파일 설정
+먼저, FAB를 포함한 레이아웃을 정의해야 합니다. `res/layout` 폴더 안에 XML 파일을 생성하고, FAB를 추가하겠습니다.
+
+```xml
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:참조=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_add"
+        android:contentDescription="@string/add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+```
+
+### 2. Kotlin 파일에서 FAB 구현
+
+이제 Kotlin 코드에서 FAB에 대한 동작을 구현해야 합니다. `MainActivity.kt` 파일을 열고 FAB에 클릭 리스너를 추가하겠습니다.
+
+```kotlin
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val fab: FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener {
+            // FAB 클릭 시 수행할 작업
+            // 예: 새로운 활동 시작, 데이터 추가, 정보 표시 등
+        }
+    }
+}
+```
+
+### 3. 리소스 및 매니페스트 설정
+
+FAB 아이콘을 위해서는 `res/drawable` 폴더에 아이콘 리소스를 추가해야 합니다. 예를 들어, `ic_add.xml` 파일을 추가하고 이를 FAB의 `srcCompat`에 지정합니다.
+
+매니페스트 파일에서는 필요한 권한을 설정하고 앱의 메인 액티비티를 지정합니다.
+
+### 추가 팁
+- FAB의 위치, 색상, 크기 등을 XML 또는 Kotlin 코드에서 조정할 수 있습니다.
+- FAB에 애니메이션을 추가하여 사용자 경험을 향상시킬 수 있습니다.
+- 여러 FAB을 사용하여 더 많은 주요 작업을 제공할 수 있지만, 사용자 인터페이스가 혼잡해지지 않도록 주의해야 합니다.
+
+위의 코드와 설명을 통해 Kotlin과 Android에서 간단한 FAB를 구현하는 방법을 알 수 있습니다. 이를 기반으로 하여 더 복잡한 로직이나 디자인을 추가할 수 있습니다.
