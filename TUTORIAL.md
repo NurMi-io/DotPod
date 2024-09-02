@@ -304,3 +304,59 @@ git push origin main
 
 이 단계들을 통해 `DotPod` 프로젝트에 `CMF Buds` 장치를 위한 `CMFScript.kt` 파일을 성공적으로 추가하고 기본 설정을 마칠 수 있습니다. 필요에 따라 `CMFScript` 내의 기능을 확장하거나 수정할 수 있습니다.
 # Part 8
+Kotlin에서 DotPod 프로젝트에 대한 플로팅 액션 버튼(Floating Action Button, FAB)을 구현하는 방법에 대해 설명드리겠습니다. 일반적으로 Android 앱에서 FAB는 사용자에게 주요 작업을 제공하는 둥근 버튼으로, 화면의 하단에 고정되어 있습니다. Kotlin을 사용하여 Android Studio에서 이를 구현하려면 몇 가지 주요 단계가 필요합니다.
+
+### 1. 의존성 추가하기
+
+먼저, 프로젝트의 `build.gradle` 파일에 Material Components 라이브러리 의존성을 추가해야 합니다. 이 라이브러리는 플로팅 액션 버튼을 포함한 다양한 머티리얼 디자인 컴포넌트를 제공합니다.
+
+```gradle
+dependencies {
+    implementation 'com.google.android.material:material:1.4.0'
+}
+```
+
+### 2. 레이아웃 파일에 FAB 추가
+
+다음으로, 액티비티의 XML 레이아웃 파일에 플로팅 액션 버튼을 추가합니다. 예를 들어, `activity_main.xml` 파일에 다음과 같은 코드를 추가할 수 있습니다.
+
+```xml
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="16dp"
+    android:src="@drawable/ic_add"
+    app:fabSize="normal"
+    app:backgroundTint="@color/primaryColor" />
+```
+
+### 3. Kotlin 코드에서 FAB 사용
+
+이제 Kotlin 코드에서 FAB에 대한 참조를 만들고 클릭 이벤트 리스너를 설정할 수 있습니다. `MainActivity.kt` 파일에서 다음과 같이 작성할 수 있습니다.
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val fab: FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener {
+            // 여기에 FAB 클릭 시 실행할 코드를 작성하세요.
+            Toast.makeText(this, "FAB 클릭됨", Toast.LENGTH_SHORT).show()
+        }
+    }
+}
+```
+
+### 4. 리소스 및 테마 관리
+
+FAB의 아이콘(`ic_add`), 색상(`primaryColor`) 등은 프로젝트의 `res` 폴더 내에 적절히 관리되어야 합니다. 일반적으로 아이콘은 `res/drawable` 폴더에, 색상은 `res/values/colors.xml` 파일에 정의됩니다.
+
+### 5. 실행 및 테스트
+
+모든 설정을 마친 후, 앱을 실행하여 FAB이 올바르게 작동하는지 테스트합니다. 버튼을 클릭했을 때 토스트 메시지가 표시되는지 확인할 수 있습니다.
+
+이러한 단계를 통해 Kotlin과 Android Studio를 사용하여 플로팅 액션 버튼을 성공적으로 구현할 수 있습니다. 추가적인 질문이나 도움이 필요하면 언제든지 질문해주세요.
