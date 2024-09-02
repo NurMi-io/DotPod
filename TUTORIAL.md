@@ -303,3 +303,4 @@ git push origin main
 ```
 
 이 단계들을 통해 `DotPod` 프로젝트에 `CMF Buds` 장치를 위한 `CMFScript.kt` 파일을 성공적으로 추가하고 기본 설정을 마칠 수 있습니다. 필요에 따라 `CMFScript` 내의 기능을 확장하거나 수정할 수 있습니다.
+# Part 8
