@@ -12,9 +12,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        flavor: [ Foss,Gplay ]
         variant: [ Debug ]
-        module: [ app,app-wear ]
+        module: [ app ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,7 +35,6 @@ jobs:
       fail-fast: false
       matrix:
         variant: [ Release ]
-        flavor: [ testFoss,testGplay ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
