@@ -7,7 +7,7 @@
 | ------- | ------------------ |
 | 구글 플레이   | :x: |
 | 시사    | :heavy_check_mark: |
-| 베타   | :x:                |
+| 베타   | :heavy_check_mark:                |
 | 깃허브   | :heavy_check_mark:                |
 | F-드로이드   | :x: |
 | 피예르   | :x:                |
