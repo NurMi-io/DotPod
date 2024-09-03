@@ -11,3 +11,6 @@
 | 깃허브   | :heavy_check_mark:                |
 | F-드로이드   | :x: |
 | 피예르   | :x:                |
+# 특허
+* DotPod 환경 설정 Google에서 이 아이콘을 디자인했습니다 에게  [Material Icons](https://pictogrammers.com/library/mdi/).
+* 블루투스 비디오와 음악. 그런데 @d4rken의 CAPod repo에 특별히 감사드립니다.
