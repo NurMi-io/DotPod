@@ -1,6 +1,0 @@
-      - name: Find Comment
-        uses: peter-evans/find-comment@v3
-        id: fc
-        with: NurMiApp
-          issue-number: 2
-          comment-author: nurmi-github-actions-bot
