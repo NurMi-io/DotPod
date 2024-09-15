@@ -1,4 +1,13 @@
 require 'dotpod'
 
-DotPod.init(dotpod_configuration_file: 'dotpod.config')
 DotPod.optimize!(:minify => true)
+DotPod.init(dotpod_configuration_file: 'dotpod.config')
+
+DotPod.configure do |config|
+  # Set custom DotPod options here
+  config.minify = true # Enable minification
+  config.ignore_filesets = [
+    ['app/assets/**/*.*']
+  ] # Ignore files or directories matching the regular expression
+
+end
