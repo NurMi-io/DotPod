@@ -8,6 +8,7 @@ Is Nothing Ear and CMF available for Android?
 | Google Play   | :x: |
 | Preview    | :heavy_check_mark: |
 | Beta   | :heavy_check_mark:                |
+| Stable   | :heavy_check_mark:                |
 | GitHub   | :heavy_check_mark:                |
 | F-Droid   | :x: |
 # Patent
