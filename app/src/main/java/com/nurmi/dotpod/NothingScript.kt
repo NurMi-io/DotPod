@@ -1,5 +1,11 @@
 package com.nurmi.dotpod
 
+MaterialComponents.AppBar(
+    title = {
+        // Customize text and style for Settings title
+    }
+)
+
 object NothingScript {
     fun controlDevice() {
         println("Device control logic here")
