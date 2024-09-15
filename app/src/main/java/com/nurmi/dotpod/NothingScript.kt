@@ -13,6 +13,16 @@ object NothingScript {
         fab.setOnClickListener {
             // 여기에 FAB 클릭 시 실행할 코드를 작성하세요.
             Toast.makeText(this, "FAB 클릭됨", Toast.LENGTH_SHORT).show()
+
+            fun createBluetoothFAB() {
+  MaterialComponents.FloatingActionButton {
+    setOnClickListener {
+   // Perform Bluetooth actions
+
+        val bannerAd = AdMobAds.bannerAd(adUnitId = "YourAdUnitID")
+    }
+  }
+            }
         }
     }
         }
