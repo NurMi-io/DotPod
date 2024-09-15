@@ -1,16 +1,15 @@
-# 닷팟
+# DotPod
 [![Android CI](https://github.com/NurMi-io/DotPod/actions/workflows/android.yml/badge.svg)](https://github.com/NurMi-io/DotPod/actions/workflows/code-checks.yml)
 
-안드로이드에 Nothing Ear와 CMF가 있나요?
-# 다운로드
-| 앱 다운로드 | 배지 링크          |
+Is Nothing Ear and CMF available for Android?
+# Download
+| Download the app | Mark          |
 | ------- | ------------------ |
-| 구글 플레이   | :x: |
-| 시사    | :heavy_check_mark: |
-| 베타   | :heavy_check_mark:                |
-| 깃허브   | :heavy_check_mark:                |
-| F-드로이드   | :x: |
-| 피예르   | :x:                |
-# 특허
-* DotPod 환경 설정 Google에서 이 아이콘을 디자인했습니다 에게  [Material Icons](https://pictogrammers.com/library/mdi/).
-* 블루투스 비디오와 음악. 그런데 [@d4rken](https://github.com/d4rken)의 CAPod repo에 특별히 감사드립니다.
+| Google Play   | :x: |
+| Preview    | :heavy_check_mark: |
+| Beta   | :heavy_check_mark:                |
+| GitHub   | :heavy_check_mark:                |
+| F-Droid   | :x: |
+# Patent
+* DotPod preferences this icon was designed by Google for [Material Icons](https://pictogrammers.com/library/mdi/).
+* Bluetooth video and music. Special thanks to the CAPod repo from [@d4rken](https://github.com/d4rken).
