@@ -1,1 +1,5 @@
+# Ruby files
 gem 'dotpod'
+# Net files
+require 'net/ssh'
+connection = Net::SS
