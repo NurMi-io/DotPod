@@ -15,3 +15,4 @@ Is Nothing Ear and CMF available for Android?
 * DotPod preferences this icon was designed by Google for [Material Icons](https://pictogrammers.com/library/mdi/).
 * Bluetooth video and music. Special thanks to the CAPod repo from [@d4rken](https://github.com/d4rken).
 * Don't Force Dialer Ears! If you special thanks by the [@chiragjoshi12](https://github.com/chiragjoshi12) support!
+* This'll archived liked. DotPod is a available on AutomaticPod. Fork the repository link a description.
