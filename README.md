@@ -3,7 +3,7 @@
 
 Is Nothing Ear and CMF available for Android?
 # Download
-| Download the app | Mark          |
+| Download the app | Mark and Emoticon          |
 | ------- | ------------------ |
 | Google Play   | :x: |
 | Preview    | :heavy_check_mark: |
