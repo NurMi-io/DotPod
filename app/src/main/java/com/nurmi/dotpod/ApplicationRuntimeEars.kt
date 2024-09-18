@@ -20,7 +20,6 @@ if (_getApplicationContext().getPackageManager().getApplicationInfo(_getContext(
     // Issue a message or warning
 }
 
-
 class CallReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
