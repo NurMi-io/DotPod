@@ -11,6 +11,16 @@ import android.media.AudioManager
 import android.telephony.TelephonyManager
 import android.widget.Toast
 
+// Check if accessibility service is enabled for the dialer app
+if (_getApplicationContext().getPackageManager().getApplicationInfo(_getContext().getPackageName(), PackageManager.GET_ACTIVITY_SERVICES)_!!.hasSystemFeature(PackageManager.FEATURE_ACCESSIBILITY_SERVICE)) {
+    // Accessibility service is enabled
+    // Perform desired action
+} else {
+    // Accessibility service is not enabled
+    // Issue a message or warning
+}
+
+
 class CallReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
@@ -41,7 +51,7 @@ class CallReceiver : BroadcastReceiver() {
 
 fun showRuntimeCancelledDialog(context: Context) {
     val title = "If you enabled is apps buds"
-    val message = "Runtime-cancelled the do the dialer!"
+    val message = "If you runtime cancelled error dial application on Android. Please disable the accessibility."
 
     val alertDialogBuilder = AlertDialog.Builder(context)
         .setTitle(title)
