@@ -3,14 +3,14 @@
 
 Is Nothing Ear and CMF available for Android?
 # Download
-| Download the app | Mark and Emoticon          |
+| Download the app | Badges          |
 | ------- | ------------------ |
-| Google Play   | :x: |
-| Preview    | :heavy_check_mark: |
-| Beta   | :heavy_check_mark:                |
-| Stable   | :heavy_check_mark:                |
-| GitHub   | :heavy_check_mark:                |
-| F-Droid   | :x: |
+| Google Play   | ![Google Play](https://img.shields.io/badge/Google%20Play-Coming%20Soon-green?logo=GooglePlay&logoColor=%239fd900) |
+| Preview    | ![Preview](https://img.shields.io/badge/Preview-Released-green?logo=Android&logoColor=%239fd900&label=Preview) |
+| Beta   | ![Beta](https://img.shields.io/badge/Beta-Released-green?logo=Android&logoColor=%239fd900) |
+| Stable   | ![Stable](https://img.shields.io/badge/Stable-Released-green?logo=Android&logoColor=%239fd900)                |
+| GitHub   | ![Static Badge](https://img.shields.io/badge/GitHub-Released-green?logo=GitHub&logoColor=%239fd900)                |
+| F-Droid   | ![F-Droid](https://img.shields.io/badge/FDroid-Coming%20Soon-green?logo=F-Droid&logoColor=%239fd900&label=F-Droid) |
 # Patent
 * DotPod preferences this icon was designed by Google for [Material Icons](https://pictogrammers.com/library/mdi/).
 * Bluetooth video and music. Special thanks to the CAPod repo from [@d4rken](https://github.com/d4rken).
