@@ -1,5 +1,5 @@
 # DotPod
-![Billing](https://img.shields.io/badge/Google%20Play%20Billing-Not%20found-red?logo=GooglePlay) [![Android CI](https://github.com/NurMi-io/DotPod/actions/workflows/android.yml/badge.svg)](https://github.com/NurMi-io/DotPod/actions/workflows/android.yml) [![Release](https://img.shields.io/github/v/release/NurMi-io/DotPod?include_prereleases)](https://github.com/NurMi-io/DotPod/releases/latest)
+[![Static Badge](https://img.shields.io/badge/Emoji%20Status-grey?logo=HuggingFace)](https://github.com/NurMi-io/DotPod/releases) [![Android CI](https://github.com/NurMi-io/DotPod/actions/workflows/android.yml/badge.svg)](https://github.com/NurMi-io/DotPod/actions/workflows/android.yml) [![Release](https://img.shields.io/github/v/release/NurMi-io/DotPod?include_prereleases)](https://github.com/NurMi-io/DotPod/releases/latest)
 
 Is Nothing Ear and CMF available for Android?
 # Download
