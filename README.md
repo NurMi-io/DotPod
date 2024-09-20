@@ -1,3 +1,5 @@
+# Archived
+This is a legacy is leftover **DotPod 1**. New available in **DotPod 2** on UI changed. Please visit this web.
 # DotPod
 [![Static Badge](https://img.shields.io/badge/Emoji%20Status-grey?logo=HuggingFace)](https://github.com/NurMi-io/DotPod/releases) [![Android CI](https://github.com/NurMi-io/DotPod/actions/workflows/android.yml/badge.svg)](https://github.com/NurMi-io/DotPod/actions/workflows/android.yml) [![Release](https://img.shields.io/github/v/release/NurMi-io/DotPod?include_prereleases)](https://github.com/NurMi-io/DotPod/releases/latest)
 
